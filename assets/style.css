@@ -7,6 +7,10 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
+.num {
+	text-decoration: none;
+	color: #fff
+}
 .top-header {
 	background-color: white;
 	position: sticky;
