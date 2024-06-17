@@ -80,8 +80,13 @@ body {
 
 .picture img {
 	width: 100%;
-
 }
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 #about-me {
 	flex: 2
 }
@@ -104,7 +109,7 @@ body {
 #gallery {
 	/*	min-height: 100vh; */
 }
-.title{
+.title {
 	text-align: center;
 	padding-block: 2em;
 }
@@ -294,8 +299,22 @@ footer {
   }
 
 @media all and (max-width: 1180px) {
+	.title {
+		padding-right: 2em;
+	}
+	footer {
+		flex-direction: column;
+		text-align: center;
+	}
+	footer .footer_right  {
+		display: block;
+	}
 	.picture {
 		flex : 2;
+	}
+	.about-me__introduction {
+		width: 100%;
+		font-size: 16px;
 	}
 	#about, #contact .container {
 		align-items: center;
@@ -330,6 +349,7 @@ footer {
 		text-align: center;
 		margin-top: 1em;
 	}
+	
 	#services .container {
 		flex-direction: column;
 	}
@@ -395,6 +415,7 @@ footer {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
+
 	form {
 		width: 100%;
 	}
